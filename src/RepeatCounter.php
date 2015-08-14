@@ -7,12 +7,12 @@
         function countRepeats()
         {
 
-          $usr_word = $_POST['word_search'];
-          $usr_string = $_POST['usr_string'];
+            $usr_word = $_POST['word_search'];
+            $usr_string = $_POST['usr_string'];
 
-          $output = substr_count(strtolower($usr_string), strtolower($usr_word));
+            $output = substr_count(strtolower($usr_string), strtolower($usr_word));
 
-          return $output;
+            return $output;
         }
 
         function displayWord()
@@ -22,6 +22,7 @@
             $usr_string = $_POST['usr_string'];
 
             return $usr_word;
+            return $usr_string;
         }
     }
  ?>

@@ -18,6 +18,6 @@
         $usr_string = $_POST['usr_string'];
         return $app['twig']->render('results.html.twig', array('usr_word' => $usr_word), array('usr_string' => $usr_string));
     });
-// attempted to return the users initial string of text here by adding a second array for 'usr_string', however it is not working, and I'm not entirely sure if its because of improper syntax or if I'm just simply not doing this correctly.
+// attempted to return the users initial string of text here by adding a second array for 'usr_string' then display it in the blockquote section of the results page, however it is not working, and I'm not entirely sure if its because of improper syntax or if I'm just simply not doing this correctly.
     return $app;
 ?>
