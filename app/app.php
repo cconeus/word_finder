@@ -13,9 +13,10 @@
         return $app['twig']->render('home.html.twig');
     });
 
-    $app->post("/results_page", function() use ($app) {
-        $usr_word = new RepeatCounter($_GET['word_search']);
-        return $app['twig']->render('results.html.twig', array('usr_word' => $usr_word));
+    $app->post("/results", function() use ($app) {
+        $usr_word = new RepeatCounter($usr_word, $usr_string);
+        $usr_string = $_POST['usr_string'];
+        return $app['twig']->render('results.html.twig', array('usr_word' => $usr_word), array('usr_string' => $usr_string));
     });
 
     return $app;

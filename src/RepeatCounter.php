@@ -4,15 +4,24 @@
     class RepeatCounter
     {
 
-        function countRepeats($usr_string, $usr_word)
+        function countRepeats()
         {
 
-            $usr_word = $_GET['word_search'];
-            $usr_string = $_GET['usr_string'];
+          $usr_word = $_POST['word_search'];
+          $usr_string = $_POST['usr_string'];
 
-            $output = substr_count($usr_string, $usr_word);
+          $output = substr_count($usr_string, $usr_word);
 
-            return $output;
+          return $output;
+        }
+
+        function displayWord()
+        {
+
+            $usr_word = $_POST['word_search'];
+            $usr_string = $_POST['usr_string'];
+
+            return $usr_word;
         }
     }
  ?>

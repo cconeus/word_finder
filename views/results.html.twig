@@ -5,9 +5,15 @@
     </head>
     <body>
         <div class="container" align="center">
-          <h3>Congratulations! The results for your search of the word "{{ usr_word.usr_word }}" can be found below!</h3>
+          <h3>Congratulations! The results for your search of the word "{{ usr_word.displayWord }}" can be found below!</h3>
           <p>
-            There appears to be {{ output }} instances of the word "{{ usr_word.usr_word }}" in your text. I dun good boss?
+              <blockquote>
+                  {{ usr_string }}
+              </blockquote>
+          </p>
+
+          <p>
+            There appears to be {{ usr_word.countRepeats }} instances of the word "{{ usr_word.displayWord }}" in your text. I dun good boss?
           </p>
           <p>
             <a href="/" class="btn btn-primary btn-xs" role="button">Find another word!</a>
