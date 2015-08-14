@@ -1,32 +1,28 @@
-# _{Application Name}_
+# Count a Word!
 
-##### _{Brief description of application}, {Date of current version}_
+##### An application which counts instances of a certain word in a string, Version Date: 14 August 2015
 
-#### By _**{List of contributors}**_
+#### By Dana Sharman
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. Do you want other developers to use this code in their apps? Talk about things like that here in simple terms.}_
+This application has two form inputs on the home page. One will gather the text which the user wishes to search for a certain word, and the second input allows the user to search for a certain word within the above text. When ran, it will take the user to a second page which displays the number of instances of the word, as well as the word itself in an easy to read format. This application would be great for counting the number of times a certain word appears in a given body of text. For example, if "Cat in the Hat" were to be input into the first box, and the word "Cat" were input into the second area, the second page will display "There appears to be ____ instances of the word "" in your text." where ___ is the number of instances, and "" is the word searched for.
 
 ## Setup
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* Place files inside of root folder
+* Open the root folder through the Terminal
+* Run "composer install" to install the required files from Silex and Twig from within the root folder
 
-_{Leave nothing to chance! You want it to be easy for potential employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Are there other applications this app depends on?}_
+You will need to run a php server in order to view this if it is being run through your local machine.
 
 ## Technologies Used
 
-_{Tell me about the languages you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+PHP, Silex and Twig are all used within this app.
 
 ### Legal
 
-*{This is boilerplate legal language. Read through it, and if you like it, use it. There are other license agreements online, but you can generally copy and paste this.}*
-
-Copyright (c) 2015 **_{List of contribtors}_**
+Copyright (c) 2015 **Dana Sharman**
 
 This software is licensed under the MIT license.
 

@@ -14,7 +14,7 @@
     });
 
     $app->post("/results_page", function() use ($app) {
-        $task = new RepeatCounter($_GET['usr_string'], $_GET['word_search']);
+        $usr_word = new RepeatCounter($_GET['word_search']);
         return $app['twig']->render('results.html.twig', array('usr_word' => $usr_word));
     });
 
