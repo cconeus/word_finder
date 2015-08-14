@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+      <title>Lets count words!</title>
+    </head>
+
+    <body>
+        <div class="container" align="center">
+
+            <form action='/results_page' method='post' class="form-horizontal">
+
+                <label for='usr_string'>Input the text you'd like to check for a certain word here:</label>
+                <input id='usr_string' name='usr_string' type='text' class="form-control">
+
+                <label for='word_search'>Input the word you'd like to search for here:</label>
+                <input id='word_search' name='word_search' type='text' class="form-control">
+
+                <button type='submit' class="btn btn-info">Begin the hunt!</button>
+
+            </form>
+
+        </div>
+    </body>
+</html>
