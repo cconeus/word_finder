@@ -10,7 +10,7 @@
           $usr_word = $_POST['word_search'];
           $usr_string = $_POST['usr_string'];
 
-          $output = substr_count($usr_string, $usr_word);
+          $output = substr_count(strtolower($usr_string), strtolower($usr_word));
 
           return $output;
         }
