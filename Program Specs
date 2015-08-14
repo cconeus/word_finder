@@ -1,0 +1,7 @@
+1. Application will show in integer form the number of instances of a word within a string. e.g. "cat lists are very interesting things to work on while learning to code." will only return the numerical output of "1".
+
+2. This app will not display partial matches. e.g. when searching for the word "cat", it would only display one instance of the word cat in the following sentence: "This cat list is a catastrophe. I cannot understand this.".
+
+3. Will properly account for improper capitalization. e.g. "For various categories of cat, some CaT breeds stick out more than others" will return a result of 2.
+
+4. App accounts for and counts instances of the chosen word which ends in "'s" or "s", to account for plural uses of the word. e.g. "My catastrophic mess of an application will account for words like cats when searching for the word cat, while still excluding words like categories." This will return the output of 2.
