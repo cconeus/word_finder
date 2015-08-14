@@ -26,3 +26,5 @@
         }
     }
  ?>
+
+ //possible future additions would include breaking the strings into individual words, so that I could exclude word searches for things like 'an' from including every word which contains the letters 'an'. Also need to complete the blockquote display still, to show the original text for comparison on the results page. Of course, some prettying-up is in order as well, to make the page a bit better looking and less rugged.
