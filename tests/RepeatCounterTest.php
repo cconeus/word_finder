@@ -10,8 +10,9 @@
 
             $test_RepeatCounter = new RepeatCounter;
             $input = "The cat in the hat";
+            $search_word = "cat";
 
-            $result = $test_RepeatCounter->countRepeats($input);
+            $result = $test_RepeatCounter->countRepeats($input, $search_word);
 
             $this->assertEquals(1, $result);
         }
